@@ -1,0 +1,31 @@
+.top-section {
+  display: flex;
+  min-height: 50vh;
+  min-width: 100vh;
+  top: 0;
+}
+
+.bottom-section {
+  display: flex;
+  min-height: 50vh;
+  min-width: 100vh;
+  bottom: 0;
+}
+
+.top-right {
+  display: flex;
+  margin-left: 80vh;
+}
+
+.top-left {
+  display: flex;
+}
+
+.bottom-right {
+  display: flex;
+  margin-left: 80vh;
+}
+
+.bottom-left {
+  display: flex;
+}
