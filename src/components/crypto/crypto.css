@@ -1,0 +1,12 @@
+.crypto-container {
+  min-height: 100%;
+  min-width: 50%;
+}
+
+.crypto-text {
+  text-align: center;
+}
+
+.crypto-title {
+  margin-top: 10%;
+}

@@ -11,21 +11,3 @@
   min-width: 100vh;
   bottom: 0;
 }
-
-.top-right {
-  display: flex;
-  margin-left: 80vh;
-}
-
-.top-left {
-  display: flex;
-}
-
-.bottom-right {
-  display: flex;
-  margin-left: 80vh;
-}
-
-.bottom-left {
-  display: flex;
-}

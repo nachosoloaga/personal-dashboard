@@ -1,0 +1,12 @@
+.container {
+  min-height: 100%;
+  min-width: 50%;
+}
+
+.weather-text {
+  text-align: center;
+}
+
+.weather-title {
+  margin-top: 25%;
+}
