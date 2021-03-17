@@ -3,6 +3,7 @@
   min-height: 50vh;
   min-width: 100vh;
   top: 0;
+  background-color: rgba(255, 255, 255, 0.5);
 }
 
 .bottom-section {
@@ -10,4 +11,29 @@
   min-height: 50vh;
   min-width: 100vh;
   bottom: 0;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+h3 {
+  font-weight: 300;
+}
+
+.search-bar {
+  height: 5vh;
+  width: 90vh;
+  border: none;
+  margin-top: 20%;
+  margin-left: 55%;
+}
+
+.search-bar::placeholder {
+  font-size: large;
+}
+
+.search-bar:focus {
+  outline: none;
+}
+
+button {
+  visibility: hidden;
 }
