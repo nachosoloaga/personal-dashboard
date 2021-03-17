@@ -16,7 +16,7 @@ const Crypto = () => {
       .then((data) => {
         setBtcData(data);
       })
-      .catch(console.log('Error fetching weather data'));
+      .catch();
   }, []);
 
   useEffect(() => {
@@ -25,7 +25,7 @@ const Crypto = () => {
       .then((data) => {
         setEthData(data);
       })
-      .catch(console.log('Error fetching weather data'));
+      .catch();
   }, []);
 
   useEffect(() => {
@@ -34,15 +34,15 @@ const Crypto = () => {
       .then((data) => {
         setDaiData(data);
       })
-      .catch(console.log('Error fetching weather data'));
+      .catch();
   }, []);
 
   return (
     <div className="crypto-container">
       <h1 className="crypto-text crypto-title">Crypto</h1>
-      <h3 className="crypto-text">{`BTC: $ ${btcData.bids[0][0]}`}</h3>
-      <h3 className="crypto-text">{`ETH: $ ${ethData.bids[0][0]}`}</h3>
-      <h3 className="crypto-text">{`DAI: $ ${daiData.bids[0][0]}`}</h3>
+      <h3 className="crypto-text">{`BTC: $${btcData.bids[0][0]}`}</h3>
+      <h3 className="crypto-text">{`ETH: $${ethData.bids[0][0]}`}</h3>
+      <h3 className="crypto-text">{`DAI: $${daiData.bids[0][0]}`}</h3>
     </div>
   );
 };

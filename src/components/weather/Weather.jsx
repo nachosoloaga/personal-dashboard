@@ -11,6 +11,8 @@ const initialWeatherData = {
   },
 };
 
+const avgPressure = 1013.25;
+
 const Weather = () => {
   const [weatherData, setWeatherData] = useState(initialWeatherData);
 
@@ -27,11 +29,18 @@ const Weather = () => {
 
   return (
     <div className="container">
+      <img
+        src={`http://openweathermap.org/img/wn/${weatherData.weather[0].icon}@2x.png`}
+        alt="Weather icon"
+        className="weather-icon"
+      />
       <h1 className="weather-text weather-title">{weatherData.name}</h1>
       <h3 className="weather-text">{weatherData.weather[0].main}</h3>
       <h3 className="weather-text">{`Temperatura: ${weatherData.main.temp} C`}</h3>
       <h3 className="weather-text">{`Humedad: ${weatherData.main.humidity}`}</h3>
-      <h3 className="weather-text">{`Presion: ${weatherData.main.pressure}`}</h3>
+      <h3 className="weather-text">{`Presion: ${weatherData.main.pressure} (${
+        weatherData.main.pressure < avgPressure ? 'Baja' : 'Alta'
+      })`}</h3>
     </div>
   );
 };

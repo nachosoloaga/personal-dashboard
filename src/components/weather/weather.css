@@ -7,6 +7,8 @@
   text-align: center;
 }
 
-.weather-title {
-  margin-top: 25%;
+.weather-icon {
+  margin-left: 45%;
+  margin-top: 8%;
+  padding: 0;
 }
